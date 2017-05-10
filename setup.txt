@@ -1,0 +1,23 @@
+Setup instructions:
+by Rex Jason Alobba
+
+This command-line program was written in Python 2.7.10.
+
+Unirest for Python needs to be installed via pip for the program to work.
+
+The program uses dependency libraries. The dependencies are as follows:
+1. threading
+2. unirest
+3. json
+4. string
+5. sys
+
+The assumption is that this program is run via command-line with Internet access. Another assumption is that this program is executed by the user with write-access to the folder the program is saved in, a .pyc file is generated whenever the program is executed.
+
+It needs one command-line argument, the Category. If the Category is more than one word, it may be enclosed in double quotes. A sample usage in a nix terminal would be:
+
+$ python cubicweight.py "air conditioners"
+
+There are also unit tests in this program that can be invoked by command-line:
+
+$ python testCalculator.py
